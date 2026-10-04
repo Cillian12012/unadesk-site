@@ -10,10 +10,22 @@
 <meta property="og:description" content="Цифровые инструменты для строительства. Скоро запуск.">
 <meta property="og:url" content="https://unadesk.com/">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;600&family=Manrope:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
+  /* Fonts are self-hosted: the page makes no requests to third-party services */
+  @font-face{font-family:'Unbounded';font-style:normal;font-display:swap;font-weight:300;src:url(fonts/unbounded-cyrillic-300-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+  @font-face{font-family:'Unbounded';font-style:normal;font-display:swap;font-weight:300;src:url(fonts/unbounded-latin-300-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+  @font-face{font-family:'Unbounded';font-style:normal;font-display:swap;font-weight:600;src:url(fonts/unbounded-cyrillic-600-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+  @font-face{font-family:'Unbounded';font-style:normal;font-display:swap;font-weight:600;src:url(fonts/unbounded-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+  @font-face{font-family:'Manrope';font-style:normal;font-display:swap;font-weight:400;src:url(fonts/manrope-cyrillic-400-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+  @font-face{font-family:'Manrope';font-style:normal;font-display:swap;font-weight:400;src:url(fonts/manrope-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+  @font-face{font-family:'Manrope';font-style:normal;font-display:swap;font-weight:600;src:url(fonts/manrope-cyrillic-600-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+  @font-face{font-family:'Manrope';font-style:normal;font-display:swap;font-weight:600;src:url(fonts/manrope-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+  @font-face{font-family:'Manrope';font-style:normal;font-display:swap;font-weight:700;src:url(fonts/manrope-cyrillic-700-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+  @font-face{font-family:'Manrope';font-style:normal;font-display:swap;font-weight:700;src:url(fonts/manrope-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+  @font-face{font-family:'JetBrains Mono';font-style:normal;font-display:swap;font-weight:400;src:url(fonts/jetbrains-mono-cyrillic-400-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+  @font-face{font-family:'JetBrains Mono';font-style:normal;font-display:swap;font-weight:400;src:url(fonts/jetbrains-mono-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+  @font-face{font-family:'JetBrains Mono';font-style:normal;font-display:swap;font-weight:500;src:url(fonts/jetbrains-mono-cyrillic-500-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+  @font-face{font-family:'JetBrains Mono';font-style:normal;font-display:swap;font-weight:500;src:url(fonts/jetbrains-mono-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
   :root {
     --bg: #0B0D10;
     --surface: #15181D;
@@ -73,8 +85,8 @@
   main { position: relative; display: flex; flex-direction: column; justify-content: center; gap: 28px; padding-block: 48px 24px; min-width: 0; }
   .eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .12em; color: var(--accent); text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
   .eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px var(--accent); animation: pulse 2.4s ease-in-out infinite; }
-  h1 { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: clamp(40px, 8vw, 104px); line-height: 1.02; letter-spacing: -0.03em; text-wrap: balance; }
-  .slogan { margin: -8px 0 0; max-width: 640px; font-family: var(--font-display); font-weight: 300; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.3; letter-spacing: -0.01em; color: var(--text); padding-left: 16px; border-left: 2px solid var(--accent); }
+  h1 { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: clamp(34px, 5.4vw, 76px); line-height: 1.04; letter-spacing: -0.02em; text-wrap: balance; }
+  .slogan { margin: -8px 0 0; max-width: 640px; font-family: var(--font-display); font-weight: 300; font-size: clamp(18px, 2vw, 24px); line-height: 1.35; letter-spacing: -0.01em; color: var(--text); padding-left: 16px; border-left: 2px solid var(--accent); }
   .lead { margin: 0; max-width: 600px; font-size: clamp(17px, 2vw, 20px); line-height: 1.55; color: var(--muted); }
   .actions { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px; }
   .btn { display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 22px; border-radius: 6px; font-weight: 700; font-size: 15px; text-decoration: none; transition: filter .15s, background-color .15s, border-color .15s; }
@@ -204,11 +216,7 @@
       <span class="en">Digital tools for construction. Drawings, as-built documentation and decisions in one current version for the client, contractors and designers.</span>
     </p>
     <div class="actions">
-      <a class="btn primary" href="mailto:info@unadesk.com?subject=UnaDesk"><span class="ru">Запросить демо</span><span class="en">Request a demo</span></a>
-      <a class="btn ghost" href="https://drive.unadesk.com/">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" aria-hidden="true"><path d="M3 6.5 H9.5 L11.5 8.5 H21 V19 H3 Z"/></svg>
-        <span class="ru">Вход для участников</span><span class="en">Member sign-in</span>
-      </a>
+      <a class="btn primary" href="mailto:info@unadesk.com"><span class="ru">Написать нам</span><span class="en">Contact us</span></a>
     </div>
   </main>
     <figure class="visual" aria-hidden="true">
@@ -302,13 +310,10 @@
       document.documentElement.lang = l;
       document.title = l === 'en' ? 'UnaDesk — digital tools for construction' : 'UnaDesk — цифровые инструменты для строительства';
       buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-set-lang') === l ? 'true' : 'false'); });
-      try { localStorage.setItem('unadesk-lang', l); } catch (e) {}
     }
     buttons.forEach(function (b) { b.addEventListener('click', function () { setLang(b.getAttribute('data-set-lang')); }); });
-    var saved = null;
-    try { saved = localStorage.getItem('unadesk-lang'); } catch (e) {}
     var nav = (navigator.language || 'ru').toLowerCase();
-    setLang(saved || (nav.indexOf('ru') === 0 ? 'ru' : 'en'));
+    setLang(nav.indexOf('ru') === 0 ? 'ru' : 'en');
   })();
 </script>
 </body>
