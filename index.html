@@ -1,14 +1,17 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>UnaDesk — цифровые инструменты для строительства</title>
-<meta name="description" content="UnaDesk — один стол на весь проект. Чертежи, исполнительная документация и решения в одной актуальной версии для всех участников объекта. Скоро запуск.">
+<title>UnaDesk — digital tools for construction</title>
+<meta name="description" content="UnaDesk — one desk for the whole project. Drawings, as-built documentation and decisions in one current version for every party. Launching soon.">
 <meta name="theme-color" content="#0B0D10">
-<meta property="og:title" content="UnaDesk — один стол на весь проект">
-<meta property="og:description" content="Цифровые инструменты для строительства. Скоро запуск.">
+<meta property="og:title" content="UnaDesk — one desk for the whole project">
+<meta property="og:description" content="Digital tools for construction. Launching soon.">
 <meta property="og:url" content="https://unadesk.com/">
+<link rel="alternate" hreflang="ru" href="https://unadesk.ru/">
+<link rel="alternate" hreflang="en" href="https://unadesk.com/">
+<link rel="alternate" hreflang="x-default" href="https://unadesk.com/">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <style>
   /* Fonts are self-hosted: the page makes no requests to third-party services */
@@ -172,9 +175,8 @@
   footer .contacts { display: flex; flex-wrap: wrap; gap: 8px 28px; }
   footer a { text-decoration: none; color: var(--text); }
   footer a:hover { color: var(--accent); }
+  footer .region { color: var(--muted); }
   footer .meta { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
-
-  [data-lang="en"] .ru, [data-lang="ru"] .en { display: none; }
 
   @keyframes draw { from { transform: scaleX(0); opacity: .2; } to { transform: scaleX(1); opacity: 1; } }
   @keyframes sweep { from { left: -120px; } to { left: 100%; } }
@@ -189,7 +191,7 @@
   @media (max-width: 1079px) { .visual { max-width: 380px; justify-self: start; } }
 </style>
 </head>
-<body data-lang="ru">
+<body>
 <div class="frame">
   <span class="corner tl" aria-hidden="true"></span><span class="corner tr" aria-hidden="true"></span>
   <span class="corner bl" aria-hidden="true"></span><span class="corner br" aria-hidden="true"></span>
@@ -199,31 +201,26 @@
       <svg viewBox="0 4.25 48 48" aria-hidden="true"><path d="M4 15 H44" stroke="#2EE59D" stroke-width="3" fill="none"/><path d="M13 21 V29 C13 35.5 17.5 40 24 40 C30.5 40 35 35.5 35 29 V21" stroke="#EDEFEA" stroke-width="6" fill="none"/></svg>
       <span class="word"><b>una</b><span>desk</span></span>
     </a>
-    <div class="lang" role="group" aria-label="Язык / Language">
-      <button type="button" data-set-lang="ru" aria-pressed="true">RU</button>
-      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
-    </div>
   </header>
 
   <div class="stage">
   <div class="hero">
   <main>
-    <div class="eyebrow"><span class="ru">Готовимся к запуску</span><span class="en">Launching soon</span></div>
-    <h1><span class="ru">Один стол на весь проект</span><span class="en">One desk for the whole project</span></h1>
-    <p class="slogan"><span class="ru">Устраняем неопределённость не только на входе, но и в процессе</span><span class="en">Removing uncertainty not only at the start, but throughout the process</span></p>
+    <div class="eyebrow">Launching soon</div>
+    <h1>One desk for the whole project</h1>
+    <p class="slogan">Removing uncertainty not only at the start, but throughout the process</p>
     <p class="lead">
-      <span class="ru">Цифровые инструменты для строительства. Чертежи, исполнительная документация и решения — в одной актуальной версии для заказчика, подрядчиков и проектировщиков.</span>
-      <span class="en">Digital tools for construction. Drawings, as-built documentation and decisions in one current version for the client, contractors and designers.</span>
+      
+      Digital tools for construction. Drawings, as-built documentation and decisions in one current version for the client, contractors and designers.
     </p>
     <div class="actions">
-      <a class="btn primary" href="mailto:info@unadesk.com"><span class="ru">Написать нам</span><span class="en">Contact us</span></a>
+      <a class="btn primary" href="mailto:info@unadesk.com">Contact us</a>
     </div>
   </main>
     <figure class="visual" aria-hidden="true">
       <svg class="doc" viewBox="0 0 460 560" width="460" height="560">
         <g class="loop">
-          <text class="crumb ru" x="40" y="26">drive / ЖК «Северный» / КМ — фасады</text>
-          <text class="crumb en" x="40" y="26">drive / North Residence / KM facades</text>
+          <text class="crumb" x="40" y="26">drive / North Residence / KM facades</text>
 
           <!-- earlier revisions, filed behind the current sheet -->
           <g class="back back2"><rect x="64" y="34" width="360" height="360" rx="4"/><text x="372" y="56">01</text></g>
@@ -259,10 +256,10 @@
           <g class="tb">
             <rect x="228" y="318" width="160" height="88"/>
             <line x1="228" y1="346" x2="388" y2="346"/><line x1="318" y1="346" x2="318" y2="406"/><line x1="228" y1="376" x2="318" y2="376"/>
-            <text class="code" x="238" y="337">КМ-01-Ф-004</text>
-            <text class="small ru" x="238" y="366">ЛИСТ 4</text><text class="small en" x="238" y="366">SHEET 4</text>
-            <text class="small ru" x="238" y="396">М 1:100</text><text class="small en" x="238" y="396">1:100</text>
-            <text class="small ru" x="328" y="364">РЕВ.</text><text class="small en" x="328" y="364">REV.</text>
+            <text class="code" x="238" y="337">KM-01-F-004</text>
+            <text class="small" x="238" y="366">SHEET 4</text>
+            <text class="small" x="238" y="396">1:100</text>
+            <text class="small" x="328" y="364">REV.</text>
             <text class="rev r1" x="328" y="394">01</text><text class="rev r2" x="328" y="394">02</text><text class="rev r3" x="328" y="394">03</text>
           </g>
 
@@ -270,7 +267,7 @@
           <g class="stamp">
             <rect x="64" y="340" width="148" height="40" rx="5"/>
             <path d="M78 360 L85 367 L98 352"/>
-            <text class="ru" x="106" y="365">АКТУАЛЬНО</text><text class="en" x="106" y="365">CURRENT</text>
+            <text x="106" y="365">CURRENT</text>
           </g>
 
           <!-- document flow -->
@@ -278,18 +275,17 @@
             <line class="track" x1="60" y1="460" x2="380" y2="460"/>
             <line class="prog" x1="60" y1="460" x2="380" y2="460"/>
             <circle class="d d1" cx="60" cy="460" r="7"/><circle class="d d2" cx="220" cy="460" r="7"/><circle class="d d3" cx="380" cy="460" r="7"/>
-            <text class="lbl ru" x="60" y="490" text-anchor="start">ЗАГРУЖЕНО</text><text class="lbl en" x="60" y="490" text-anchor="start">UPLOADED</text>
-            <text class="lbl ru" x="220" y="490">СОГЛАСОВАНИЕ</text><text class="lbl en" x="220" y="490">REVIEW</text>
-            <text class="lbl ru" x="380" y="490" text-anchor="end">УТВЕРЖДЕНО</text><text class="lbl en" x="380" y="490" text-anchor="end">APPROVED</text>
+            <text class="lbl" x="60" y="490" text-anchor="start">UPLOADED</text>
+            <text class="lbl" x="220" y="490">REVIEW</text>
+            <text class="lbl" x="380" y="490" text-anchor="end">APPROVED</text>
           </g>
-          <text class="caption ru" x="40" y="540">ВСЕ РЕВИЗИИ — В ОДНОМ МЕСТЕ</text>
-          <text class="caption en" x="40" y="540">EVERY REVISION IN ONE PLACE</text>
+          <text class="caption" x="40" y="540">EVERY REVISION IN ONE PLACE</text>
         </g>
       </svg>
     </figure>
   </div>
     <div class="level" aria-hidden="true">
-      <span class="mark-level ru">ОТМ. ±0.000</span><span class="mark-level en">LEVEL ±0.000</span>
+      <span class="mark-level">LEVEL ±0.000</span>
       <div class="laser"></div>
     </div>
   </div>
@@ -298,23 +294,8 @@
     <div class="contacts">
       <a href="mailto:info@unadesk.com">info@unadesk.com</a>
     </div>
-    <div class="meta">© 2026 UnaDesk · unadesk.com</div>
+    <div class="meta"><a class="region" href="https://unadesk.ru/" hreflang="ru" lang="ru">Россия → unadesk.ru</a> · © 2026 UnaDesk · unadesk.com</div>
   </footer>
 </div>
-<script>
-  (function () {
-    var body = document.body;
-    var buttons = document.querySelectorAll('[data-set-lang]');
-    function setLang(l) {
-      body.setAttribute('data-lang', l);
-      document.documentElement.lang = l;
-      document.title = l === 'en' ? 'UnaDesk — digital tools for construction' : 'UnaDesk — цифровые инструменты для строительства';
-      buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-set-lang') === l ? 'true' : 'false'); });
-    }
-    buttons.forEach(function (b) { b.addEventListener('click', function () { setLang(b.getAttribute('data-set-lang')); }); });
-    var nav = (navigator.language || 'ru').toLowerCase();
-    setLang(nav.indexOf('ru') === 0 ? 'ru' : 'en');
-  })();
-</script>
 </body>
 </html>
