@@ -1,6 +1,6 @@
 # unadesk.com
 
-Заглушка сайта UnaDesk «Готовимся к запуску». Статическая страница: `index.html` + `favicon.svg`, RU/EN.
+Заглушка сайта UnaDesk «Готовимся к запуску». Статическая страница: `index.html` + `favicon.svg` + `img/` (3D-рендеры), RU/EN.
 
 Публикуется через GitHub Pages из ветки `main` (папка `/`), домен — `unadesk.com` (файл `CNAME`).
 
